@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(141, 194, 194);
+}
+
+#pessoas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.pessoas-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 400px;
+    margin: 0 auto;
+    height: 500px;
+    padding: 10px 20px;
+    box-shadow: 10px 5px 5px rgb(44, 31, 31);
+    background-color: rgb(141, 194, 194);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.inputs > label {
+    font-size: 20px;
+}
+
+.inputs > input[type="text"],
+.inputs > input[type="number"],
+.inputs > input[type="email"] {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    width: 25%;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(55, 97, 117);
+}
+
+#tabela-crud {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.tabela {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.tabela caption {
+    font-size: 25px;
+}
+
+.tabela th {
+    padding: 10px 15px;
+}
+
+tr {
+    color: aliceblue;
+}
+
+#pessoa-lista td {
+    padding: 0 5px;
+    background-color: rgba(15, 22, 36, 0.486);
+}
+
+td a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media(max-width: 767px) {
+
+    .tabela {
+        width: 400px;
+    }
+
+
+    thead {
+        display: none;
+    }
+    td {
+        display: block;
+    }
+    td::before {
+        content: attr(data) ": ";
+        font-weight: bold;
+        color: black;
+    }
+}

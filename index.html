@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 2 - Crud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/03efd3182a.js" crossorigin="anonymous"></script></head>
+<body>
+    <div id="pessoas">
+        <div class="container">
+            <div class="pessoas-container">
+                <h1>Pessoas</h1>
+                <form action="" id="form-pessoa" autocomplete="off">
+                    <div class="form-pessoas">
+                        <div class="inputs">
+                            <label for="nome">Nome Completo: </label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome">
+                        </div>
+                        <div class="inputs">
+                            <label for="endereco">Endereço: </label>
+                            <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+                        </div>
+                        <div class="inputs">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="telefone">Numero de Telefone</label>
+                            <input type="number" name="telefone" id="telefone" placeholder="Telefone">
+                        </div>
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="tabela-crud">
+        <div class="container">
+
+            <table class="tabela">
+                <caption>Tabela de Pessoas</caption>
+                <thead>
+                    <tr style="background-color: black;">
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Endereço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="pessoa-lista">
+                    <tr>
+                        <td data="Nome">Fabio</td>
+                        <td data="Telefone">11111111</td>
+                        <td data="Email">gabrsda@gmail.com</td>
+                        <td data="Endereço">castelo branco</td>
+                        <td data="Ações">
+                            <a href="#"><i class="fa-regular fa-pen-to-square"></i>edit</a>
+                            <a href="#"><i class="fa-solid fa-delete-left"></i>delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
